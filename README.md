@@ -18,3 +18,6 @@ Order for running scripts:
     *  Then `Check_for_missing_data` using these scripts. Sometimes when batch processing the data simultaneously it causes the Earth Engine system to be overloaded, and as such certain months can be missed.
     *  After the processing use `Shorten CSVs`. When the processing scripts run, it will save all previous iterations in the CSV file. To remove previous iterations, use this Notebook to save just the current scenario.
     *  Add December 2023 and all 2024 historic data for ERA5-Land and CEMS using `Add 2024 E5l and CEMS data.ipynb`.
+3.  Process the `ecoregion_mean` values for each variable into individual ecoregion csv files, before combining into a single `master_summary` csv file for all ecoregions.
+4.  Analyse the data on an `individual` or `group` level using the Jupyter Notebooks.
+5.  Make circumpolar plots across all ecoregions using `Plots from master summary.ipynb`. Bar plots of burned area can also be made here for grouped regions.
