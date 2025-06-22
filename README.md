@@ -3,6 +3,7 @@ Repository to process the netCDF fire projections [made here](https://github.com
 
 Preliminary:
 *  Ensure you have a Google Earth Engine account linked to a project
+*  It is strongly recommended to have access to a Google Cloud Storage bucket
 *  Use of a supercomputer or HPC is encouraged for running the scripts
 
 Order for running scripts:
