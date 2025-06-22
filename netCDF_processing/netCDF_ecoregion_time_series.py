@@ -94,7 +94,7 @@ for short_name, region_gdf in regions.items():
             area_df.columns = ['time', 'burned_area_Mha']
             
             # Save to CSV
-            #output_csv_path = f"/home/users/clelland/Model/Analysis/Ecoregion plots/area_timeseries_eco_{short_name}_{model}_{scenario}.csv" # <-- Edit as necessary
+            output_csv_path = f"/home/users/clelland/Model/Analysis/Ecoregion plots/area_timeseries_eco_{short_name}_{model}_{scenario}.csv" # <-- Edit as necessary
             area_df.to_csv(output_csv_path, index=False)
             
             print(f"Saved area time series to {output_csv_path}")
@@ -108,7 +108,7 @@ for short_name, region_gdf in regions.items():
             plt.grid(True)
             plt.legend()
             plt.tight_layout()
-            #plt.savefig(f'/home/users/clelland/Model/Analysis/Ecoregion plots/area_timeseries_{model}_{scenario}_eco_{short_name}.png', dpi=300, bbox_inches='tight', transparent=True) # <-- Edit as necessary
+            plt.savefig(f'/home/users/clelland/Model/Analysis/Ecoregion plots/area_timeseries_{model}_{scenario}_eco_{short_name}.png', dpi=300, bbox_inches='tight', transparent=True) # <-- Edit as necessary
 
 # Record time
 end_time = time.time()
